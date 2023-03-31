@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JS</title>
+</head>
+<body>
+    
+    <h1>
+        Questâ
+    </h1>
+
+    <p>
+        Em que país você nasceu?
+    </p>
+
+    <input type="text" name="country" id="country">
+
+    <input type="button" value="Verificar" onclick="verificar()">
+
+    <div id="resposta">
+
+    </div>
+
+    <script>
+
+        function verificar() {
+            var coun = document.querySelector('#country')
+            var coun1 = String(coun.value)
+            var coun2 = coun1.charAt(0).toUpperCase() + coun1.slice(1)
+
+            var res = document.querySelector('#resposta')
+
+            res.innerHTML = `Você nasceu em: <strong>${coun2}</strong>`
+
+            if (coun2 == 'Brasil') {
+                res.innerHTML += '<p>Você é brasileiro!<p>'
+            } else {
+                res.innerHTML += '<p>Você não é brasileiro!</p>'
+            }
+        }
+
+    </script>
+
+</body>
+</html>

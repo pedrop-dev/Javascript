@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Dia</title>
+</head>
+<body>
+    
+    <h1>
+        Dia semana
+    </h1>
+
+    <p>
+        Que dia é hoje?
+    </p>
+
+    <input type="number" placeholder="De 0 a 6" name="data" id="data">
+
+    <input type="button" value="Verificar" onclick="verificar()">
+
+    <div id="resposta">
+
+    </div>
+
+    <script>
+
+        function verificar() {
+            var data = document.querySelector('#data')
+            var data1 = Number(data.value)
+            var data2 = new Date()
+            var data3 = data2.getDay()
+
+            var res = document.querySelector('#resposta')
+
+            res.innerText = `Data ${data3}`
+
+            switch (data1) {
+                case 0:
+                    res.innerHTML = 'Hoje é Domingo'
+                    break
+                case 1:
+                    res.innerHTML = 'Hoje é Segunda-feira'
+                    break
+                case 2:
+                    res.innerHTML = 'Hoje é Terça-feira'
+                    break
+                case 3:
+                    res.innerHTML = 'Hoje é Quarta-feira'
+                    break
+                case 4:
+                    res.innerHTML = 'Hoje é Quinta-feira'
+                    break
+                case 5:
+                    res.innerHTML = 'Hoje é Sexta-feira'
+                    break
+                case 6:
+                    res.innerHTML = 'Hoje é Sábado'
+                    break
+                default:
+                    res.innerHTML = '[ERRO] Dia Inválido'
+                    break
+            }
+        }
+
+    </script>
+
+</body>
+</html>
