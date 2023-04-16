@@ -1,6 +1,6 @@
 /*
 Timers
-setTimeOut(função, delay)
+setTimeout(função, delay)
 setInterval(função, delay) , clearInterval
 */
 

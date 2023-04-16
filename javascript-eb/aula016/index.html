@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Pedro
+    </h1>
+
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod autem itaque distinctio dignissimos aut aperiam illo amet iusto explicabo natus. Illo iure vero repellat doloremque dignissimos quasi nemo explicabo libero.
+        </p>
+    </div>
+
+    <div id="root">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita rem ea distinctio nihil commodi quod repudiandae omnis provident, error perferendis aperiam ducimus quidem, architecto tempore a eaque suscipit iusto.
+    </div>
+
+    <script>
+        //DOM
+
+        /*function changeHeading() {
+            const headings = document.getElementsByTagName('h1')[0]
+            const firstHeading = (headings && headings[0] ? headings[0] : null)
+
+            firstHeading.innerHTMLT = '<i>Henrique</i>'
+
+            console.log(headings)
+        }
+        
+         setTimeout(changeHeading, 2000)
+        */
+
+        const headings = document.getElementsByTagName('h1')[0]
+        const firstHeading = headings && headings[0] ? headings[0] : null
+
+        const containers = document.getElementsByClassName('container')
+        const container = (containers && containers[0]) ? containers[0] : null
+
+        document.querySelector('#root')
+
+        root.innerHTML = 'Manipular o DOM é bacana'
+
+        container.style.backgroundColor = 'red'
+        container.style.color = 'white'
+        container.style.padding = '20px'
+    </script>
+</body>
+</html>
