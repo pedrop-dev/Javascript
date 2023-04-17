@@ -10,19 +10,3 @@
 body {
     background-color: #111;
 }
-
-section {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-section h2 {
-    position: relative;
-    font-size: 12rem;
-    color: aquamarine;
-}
